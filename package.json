@@ -1,0 +1,13 @@
+{
+  "name": "hello-world-node",
+  "version": "1.0.0",
+  "description": "Node.js Hello World",
+  "author": "Vidhya Chari",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
