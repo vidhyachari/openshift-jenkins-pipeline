@@ -37,7 +37,7 @@ node('nodejs'){
       oc get bc ${application} -n ${project}
 
       # Cancel any currently running builds
-      oc cancel-build bc/${applications} -n ${project}
+      oc cancel-build bc/${application} -n ${project}
 
       # Start build and follow logs
       oc start-build ${application} --follow -n ${project}
