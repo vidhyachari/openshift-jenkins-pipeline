@@ -5,8 +5,8 @@ openshiftApiURL = "https://api.starter-us-west-2.openshift.com"
 openshiftAuthToken = null
 
 contextDir = "/"
-gitBranch = env.GIT_BRANCH
-gitURL = env.GIT_URL
+gitBranch = "master"
+gitURL = "https://github.com/vidhyachari/openshift-jenkins-pipeline"
 openshiftTemplatePath = "openshift-templates/nodejs.json"
 
 
