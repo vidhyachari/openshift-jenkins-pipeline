@@ -42,7 +42,13 @@ node('nodejs'){
       # Start build and follow logs
       oc start-build ${application} --follow -n ${project}
     """
-    
+   
+   //Start Deployment
+   sh """
+      oc rollout cancel dc/${application} -n ${project}
+      oc rollout latest dc/${application} -n ${project}
+   """
+   
 }//node
 
 def getJenkinsSACredentials(){
